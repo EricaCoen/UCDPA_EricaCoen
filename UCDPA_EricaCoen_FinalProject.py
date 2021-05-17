@@ -7,6 +7,10 @@ data.columns = ['Age','Sex','Chest Pain Type','Resting Blood Pressure','Serum Ch
 print(data.head())
 # Where Thal measurement; 0 = Normal, 1 = Fixed Defect and 2 = Reversible Defect
 
+    else:print("Male")
+sorted_data = data.sort_values('Age')
+print(sorted_data.head())
+
 
 
 
