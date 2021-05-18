@@ -8,6 +8,14 @@ print(data.head())
 # Where Thal measurement; 0 = Normal, 1 = Fixed Defect and 2 = Reversible Defect
 sorted_data = data.sort_values('Age')
 print(sorted_data.head())
+print(sorted_data.index)
+arrays = [['Age'],['Sex']]
+index = pd.MultiIndex.from_arrays(arrays,names=('Age','Sex'))
+print(index)
+
+
+
+
 
 
 
